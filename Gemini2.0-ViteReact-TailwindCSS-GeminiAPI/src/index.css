@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap");
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+  font-family: Outfit;
+}
+
+#root{
+  animation: fadeIn 1.5s;
+}
+
+.recententry{
+    animation: fadeIn 1.5s;
+}
+
+.text{
+    animation: fadeIn 1s;
+}
+
+.scrollbar-thin {
+  position: relative;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+  background: transparent; 
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #adb0b9; 
+  border-radius: 10px; 
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #e5e7eb; 
+}
+
+@keyframes loader {
+  0% {
+    background-position: -700px 0px;
+  }
+  100% {
+    background-position: 700px 0px;
+  }
+}
+
+.recent {
+  overflow-y: auto; 
+  max-height: 250px; 
+}
+
+.recent::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.recent::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+  border-radius: 10px; 
+}
+
+.recent:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(218, 218, 218); 
+}
+
+.recent::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinSlow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-spinSlow {
+    animation: spinSlow 2s linear infinite;
+  }
